@@ -1,0 +1,182 @@
+.header {
+  .container {
+    background: $ff;
+  }
+  &__top {
+    padding:3px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:15px;
+    border-bottom:1px solid $bord;
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &-span {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      }
+      &-img {
+        width: 57px;
+        height: 57px;
+      }
+      &-image {
+        width: 151.5px;
+        height: 25px;
+      }
+      &-picture {
+        width: 148.6px;
+        height: 9.8px;
+      }
+    }
+    &__button {
+      &-btn {
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background: $red;
+        color: $ff;
+        font-family: SF Pro Display;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.09px;
+        text-align: left;
+        border: none;
+        border-radius: 3px;
+      }
+      &-bars {
+        font-size: 20px;
+        color: $ff;
+      }
+    }
+    &__form {
+      padding-right: 10px;
+      width: 318px;
+      height: 40px;
+      border: 1px solid $bord;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #edebeb;
+      border-radius: 3px;
+      &-input {
+        padding-left: 10px;
+        width: 90%;
+        height: 40px;
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.71px;
+        text-align: left;
+        color: $ADAD;
+        border: none;
+      }
+    }
+    &__icon {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      &-vk {
+        font-size: 40px;
+        color: rgba(31, 56, 167, 0.692);
+      }
+      &-telegram {
+        font-size: 40px;
+        color: rgba(16, 103, 234, 0.712);
+      }
+      &-whatsaap {
+        padding: 4px 6px;
+        font-size: 30px;
+        color: $ff;
+        background: rgba(26, 230, 26, 0.826);
+        border-radius: 50%;
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      // &-span{
+      //     padding:5px;
+      //     // width:40px;
+      //     // height:40px;
+      //     border-radius:50%;
+      //     border:2px solid $bord;
+      // }
+    }
+    &__call{
+      display:none;
+    }
+    &__menu{
+      display:none;
+    }
+  }
+  &__list {
+    padding:35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap:20px;
+    flex-wrap: wrap;
+    &-link {
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.09px;
+      text-align: left;
+      color:$blask;
+    }
+  }
+}
+@media screen and (max-width:630px){
+  .header{
+    &__top{
+      gap:10px;
+      &__button{
+        display: none;
+      }
+      &__form{
+        display: none;
+      }
+      &__icon{
+        display: none;
+      }
+      &__right{
+        display: none;
+      }
+      &__call{
+        display: block;
+        &-phone{
+          font-size:35px;
+          color:rgba(22, 192, 25, 0.836);
+          transform:rotate(330deg);
+        }
+      }
+      &__menu{
+        display: block;
+        &-bars{
+          font-size:35px;
+          color:$blask;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:414px){
+  .header{
+    &__top{
+      &__call{
+        &-phone{
+          display: none;
+        }
+      }
+    }
+  }
+}

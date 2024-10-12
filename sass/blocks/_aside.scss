@@ -1,0 +1,234 @@
+.aside {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 35px;
+  }
+  &__left {
+    background: $ff;
+    border: 2px solid $bord;
+    height:1300px;
+    &__main {
+      padding: 17px 18px;
+      &-link {
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: left;
+        color: $blask;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+    &__list {
+      &-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-title {
+        font-family: SF Pro Display;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: left;
+        color: $blask;
+      }
+      &-img {
+        width: 15px;
+      }
+      &-item {
+        padding: 5px 18px;
+        border-top: 2px solid $bord;
+      }
+      &-box {
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      &-span {
+        border: 1px solid $bord;
+        box-sizing: content-box;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 7px;
+      }
+      &-hr {
+        width: 20px;
+        height: 2px;
+        background: $bord;
+        border: none;
+      }
+      &-name {
+        font-family: SF Pro Display;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.09px;
+        text-align: center;
+        color: $blask;
+      }
+      &-number {
+        font-family: SF Pro Display;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.09px;
+        text-align: left;
+        color: $bord;
+      }
+      &-range {
+        width: 100%;
+      }
+      &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      // ------------------------Объем--------
+      &-list {
+        height: 200px;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: scroll;
+      }
+      &-subitem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      // -------------------Диаметр--------------
+      &-aside {
+        height: 200px;
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow-y: scroll;
+      }
+      &-subradio {
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &-items {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 45%;
+      }
+      &-end {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  &__right {
+    &-list {
+      padding-bottom:40px;
+      display: flex;
+      align-items: start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-item {
+      width:220px;
+      height:250px;
+      background: $ff;
+      z-index: -2;
+      position: relative;
+    }
+    &-box {
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-text {
+      width: 100px;
+      font-family: SF Pro Display;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 11.93px;
+      text-align: left;
+      color: $ff;
+    }
+    &-img {
+      width: 15px;
+    }
+    &-image {
+      width: 100%;
+      height: 180px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+    &-subtext {
+      padding-top: 160px;
+      font-family: SF Pro Display;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 13.54px;
+      text-align: center;
+      color: $blask;
+    }
+    &-block {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &-number {
+      font-family: SF Pro Display;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 13.54px;
+      text-align: center;
+      color: $blask;
+    }
+    &-span {
+      padding: 2px 10px;
+      font-family: SF Pro Display;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 13.54px;
+      text-align: center;
+      color: $ff;
+      background: $red;
+    }
+    &-subnumber {
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.09px;
+      text-align: center;
+      color: $DD;
+      text-decoration:line-through $red;
+    }
+  }
+}
+@media screen and (max-width:475px){
+  .aside{
+    .container{
+      grid-template-columns:1fr;
+    }
+    &__right{
+      &-list{
+        gap:10px;
+        justify-content:center;
+      }
+      &-item{
+        width:180px;
+      }
+    }
+  }
+}

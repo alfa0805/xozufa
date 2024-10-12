@@ -1,0 +1,16 @@
+*,::after,
+::before{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+.container{
+    max-width:1280px;
+    padding:0px 20px;
+    margin: 0 auto;
+}
+body{
+    background:#edebeb;
+}

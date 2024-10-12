@@ -1,0 +1,71 @@
+.section {
+  .container {
+    padding: 25px 20px;
+  }
+  &__block {
+    padding: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px;
+    background-color: $ff;
+  }
+  &__text {
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    text-align: left;
+    color: $blask;
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &-span {
+      display: flex;
+      align-items: center;
+      gap:3px;
+    }
+    &-input {
+      outline-color: red;
+    }
+    &-text {
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.09px;
+      text-align: left;
+      color: $blask;
+    }
+  }
+  &__select {
+    outline: none;
+    border: none;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    text-align: center;
+    color:$blask;
+    &-option {
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.09px;
+      text-align: center;
+      color: $blask;
+    }
+  }
+}
+@media screen and (max-width:414px){
+   .section{
+    &__form{
+        flex-wrap: wrap;
+        &-text{
+            font-size:12px;
+        }
+    }
+   } 
+}

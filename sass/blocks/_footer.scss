@@ -1,0 +1,152 @@
+.footer {
+  background: $blask;
+  &__logo {
+    padding: 7px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 1.5px solid $bord;
+    &-text {
+      font-family: SF Pro Display;
+      font-size: 10.52px;
+      font-weight: 400;
+      line-height: 12.56px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: $ff;
+    }
+    &-span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+  &__main {
+    padding: 20px 0px;
+    border-bottom: 1.5px solid $bord;
+    &-list {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-item {
+      width: 180px;
+    }
+    &-title {
+      padding: 15px 0px;
+      font-family: SF Pro Display;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 19.09px;
+      text-align: left;
+      color: $ff;
+    }
+    &-subtitle {
+      padding: 15px 0px;
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.09px;
+      text-align: left;
+      color: $blask;
+    }
+    &-sublist {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 7px;
+    }
+    &-link {
+      font-family: SF Pro Display;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: left;
+      color: $bord;
+    }
+    &-text {
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16.71px;
+      text-align: left;
+      color: $ff;
+    }
+    &-span {
+      display: flex;
+      flex-direction: column;
+    }
+    &-data {
+      font-family: SF Pro Display;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: left;
+      color: $ff;
+    }
+    &-box {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &-img {
+      width: 15px;
+      height: 12px;
+    }
+  }
+  &__bottom {
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    &-text {
+      width: 253px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 10px;
+      text-align: left;
+      color: $bord;
+    }
+    &-subtext {
+      width: 250px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 10px;
+      text-align:center;
+      color: $bord;
+    }
+    &-number{
+      width: 295px;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 10px;
+      text-align: left;
+      color: $bord;
+    }
+    &-span{
+        width: 295px;
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 10px;
+        text-align: left;
+        color: $ff; 
+    }
+  }
+}
+@media screen and (max-width:850px){
+    .footer{
+        &__bottom{
+            gap:20px;
+            justify-content:start;
+        }
+    }
+}

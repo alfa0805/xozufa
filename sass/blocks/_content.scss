@@ -1,0 +1,136 @@
+.content {
+  .container {
+    padding:45px 20px;
+    background: $ff;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    gap:40px;
+    flex-wrap: wrap;
+  }
+  &__img {
+    width: 465px;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        padding-bottom:32px;
+        font-family: SF Pro Display;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.64px;
+        text-align: center;
+        color: $blask;
+      }
+    &-img {
+      width: 110px;
+      height: 110px;
+    }
+    &-image {
+      width: 281px;
+      height: 62px;
+    }
+    &-text {
+      font-family: SF Pro Display;
+      font-size: 19.27px;
+      font-weight: 300;
+      line-height: 22.99px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: $ADAD;
+    }
+  }
+  &__form {
+    width: 297px;
+    &-title {
+      font-family: SF Pro Display;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.87px;
+      text-align: center;
+      color: $blask;
+    }
+    &-text {
+      padding: 3px 0px;
+      font-family: SF Pro Display;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 19.09px;
+      text-align: left;
+      color: $DD;
+    }
+    &-input {
+      width: 100%;
+      height: 35px;
+      outline: none;
+      border: none;
+      border: 1.5px solid $red;
+      background: #edebeb;
+    }
+    &-btn {
+      margin-top: 30px;
+      width: 100%;
+      height: 45px;
+      font-family: SF Pro Display;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.48px;
+      text-align: center;
+      color: $ff;
+      background: $red;
+      border: 1px solid $red;
+    }
+    &-span {
+      padding-top:15px;
+      display: flex;
+      align-items: center;
+      gap:5px;
+    }
+    &-subtext {
+      font-family: SF Pro Display;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.32px;
+      text-align: left;
+      color: $SASA;
+    }
+  }
+}
+@media screen and (max-width:630px){
+    .content{
+        &__menu{
+            justify-content:center;
+        }
+    }
+}
+@media screen and (max-width:485px){
+    .content{
+        &__img{
+            width:370px;
+        }
+        &__block{
+            &-img{
+                width:70px;
+                height:70px;
+            }
+            &-image{
+                width:230px;
+                height:45px;
+            }
+            &-text{
+                font-size:16px;
+            }
+        }
+    }
+}
+@media screen and (max-width:414px){
+    .content{
+        &__img{
+            display: none;
+        }
+    }
+}
