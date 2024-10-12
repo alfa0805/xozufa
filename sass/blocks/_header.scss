@@ -112,7 +112,9 @@
       // }
     }
     &__call{
-      display:none;
+      &-phone{
+        display: none;
+      }
     }
     &__menu{
       display:none;

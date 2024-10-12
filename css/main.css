@@ -121,7 +121,7 @@ body {
   justify-content: center;
   gap: 14px;
 }
-.header__top__call {
+.header__top__call-phone {
   display: none;
 }
 .header__top__menu {
